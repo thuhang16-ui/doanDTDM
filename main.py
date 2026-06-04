@@ -8,7 +8,8 @@ app = FastAPI(title="Đồ án Cloud - Lưu trữ tài liệu")
 
 # 1. CẤU HÌNH KẾT NỐI ĐÁM MÂY
 SUPABASE_URL = os.getenv("SUPABASE_URL", "https://lhunflhmwyujwhrwclpp.supabase.co")
-SUPABASE_KEY = os.getenv("SUPABASE_KEY", "SUPABASE_KEY", "YOUR_SUPABASE_SECRET_KEY_HERE")
+# Sửa chính xác dòng 11 thành như thế này (Nhớ nhấn Ctrl + S để lưu lại):
+SUPABASE_KEY = os.getenv("SUPABASE_KEY", "YOUR_SUPABASE_SECRET_KEY_HERE")
 
 # Khởi tạo Client kết nối Supabase
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
